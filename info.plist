@@ -10,7 +10,33 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>C22A37A0-4183-4F45-86E1-FCFF471C3173</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>36BE40F3-CB2C-4ABD-A1CF-DE3A67DF7C7F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
 				<string>05FFB6E2-C3D8-403F-A328-935BF9E94278</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8551D5B5-2575-4293-A514-2D1FEB176DA7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>36BE40F3-CB2C-4ABD-A1CF-DE3A67DF7C7F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -24,6 +50,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>91F828CE-9EED-4001-B865-98CADFBEBDB0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C22A37A0-4183-4F45-86E1-FCFF471C3173</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>05FFB6E2-C3D8-403F-A328-935BF9E94278</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -46,21 +85,39 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>Beautify screenshot</string>
-				<key>subtext</key>
-				<string>美化剪贴板上的截图</string>
-				<key>text</key>
-				<string>Beautify screenshot using python</string>
-				<key>withspace</key>
-				<false/>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>图片背景美化（添加圆角和背景色）</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>06A1BF84-7D11-4901-85C1-D731B8C631E3</string>
+			<string>8551D5B5-2575-4293-A514-2D1FEB176DA7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>files</key>
+					<string>{query}</string>
+					<key>source</key>
+					<string>file</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>36BE40F3-CB2C-4ABD-A1CF-DE3A67DF7C7F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -96,7 +153,7 @@ for path in "${paths[@]}"; do
         echo "Trying Python interpreter: $path" &gt;&amp;2
 
         # Execute the Python script and capture its exit code
-        "$path" "$SCRIPT_PATH"
+        "$path" "$SCRIPT_PATH" $source
         python_exit_code=$?
 
         # Check if the Python script executed successfully
@@ -136,18 +193,38 @@ fi</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>torn screenshot</string>
+				<string>Beautify screenshot</string>
 				<key>subtext</key>
-				<string>美化剪贴板上的截图：添加撕裂边缘</string>
+				<string>美化剪贴板上的截图</string>
 				<key>text</key>
-				<string>add torn to screenshot using python</string>
+				<string>Beautify screenshot using python</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>AAC76CD5-61D3-450C-A0D4-1A4C25939902</string>
+			<string>06A1BF84-7D11-4901-85C1-D731B8C631E3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>source</key>
+					<string>clipboard</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C22A37A0-4183-4F45-86E1-FCFF471C3173</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -217,6 +294,27 @@ fi</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>torn screenshot</string>
+				<key>subtext</key>
+				<string>美化剪贴板上的截图：添加撕裂边缘</string>
+				<key>text</key>
+				<string>add torn to screenshot using python</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>AAC76CD5-61D3-450C-A0D4-1A4C25939902</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Universal Actions let you take any text, URLs or files and perform actions on them from anywhere on your Mac.
@@ -250,9 +348,25 @@ Using this hotkey will bring up the Action panel, pre-populated with your clipbo
 			<key>note</key>
 			<string>美化剪贴板上的截图，并复制美化图像到剪贴板上</string>
 			<key>xpos</key>
-			<real>275</real>
+			<real>140</real>
 			<key>ypos</key>
 			<real>265</real>
+		</dict>
+		<key>36BE40F3-CB2C-4ABD-A1CF-DE3A67DF7C7F</key>
+		<dict>
+			<key>xpos</key>
+			<real>360</real>
+			<key>ypos</key>
+			<real>145</real>
+		</dict>
+		<key>8551D5B5-2575-4293-A514-2D1FEB176DA7</key>
+		<dict>
+			<key>note</key>
+			<string>在Finder选择图像文件</string>
+			<key>xpos</key>
+			<real>105</real>
+			<key>ypos</key>
+			<real>115</real>
 		</dict>
 		<key>91F828CE-9EED-4001-B865-98CADFBEBDB0</key>
 		<dict>
@@ -273,6 +387,13 @@ Using this hotkey will bring up the Action panel, pre-populated with your clipbo
 			<real>200</real>
 			<key>ypos</key>
 			<real>475</real>
+		</dict>
+		<key>C22A37A0-4183-4F45-86E1-FCFF471C3173</key>
+		<dict>
+			<key>xpos</key>
+			<real>355</real>
+			<key>ypos</key>
+			<real>295</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
