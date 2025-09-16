@@ -1,4 +1,3 @@
-
 这是一个Alfred workflow，用于美化剪贴板中的截图和图像。
 
 ## 功能特性
@@ -11,15 +10,32 @@
 
 ### 输入方式
 
-- 支持从剪贴板获取图像
-   - 使用截图工具截图后自动复制到剪贴板
-   - 直接在`Finder`中复制图像文件到剪贴板
-- 支持通过Alfred universal actions处理文件
-   - 在`Finder`中选取一个或多个图像文件，使用Alfred universal action快捷键唤起窗口，搜索本workflow命令，进行处理
+支持从剪贴板获取图像：
+- 使用截图工具截图后自动复制到剪贴板
+- 直接在`Finder`中复制图像文件到剪贴板
+
+支持通过Alfred universal actions处理文件：
+- 在`Finder`中选取一个或多个图像文件，使用Alfred universal action快捷键唤起窗口，搜索本workflow命令，进行处理
 
 
 
 ## 使用方法
+
+<div align="center">
+  <img src="https://ayyyyy.sbs/2025/09/581f7630e493b66f93e0845fcf740874.GIF" width="120" style="border:1px solid #ccc;"/>
+  <img src="https://ayyyyy.sbs/2025/09/1e45b06731f829a1be58aa76e653854b.gif" width="120" style="border:1px solid #ccc;"/>
+  <img src="https://ayyyyy.sbs/2025/09/a8b42d80d98bd36a944101875cd401d1.gif" width="120" style="border:1px solid #ccc;"/>
+  <img src="https://ayyyyy.sbs/2025/09/07da54c0505f557e711e9dc622a80dc9.gif" width="120" style="border:1px solid #ccc;"/>
+  <img src="https://ayyyyy.sbs/2025/09/766b0de4d89f5f58995cb491c331c34e.gif" width="120" style="border:1px solid #ccc;"/>
+</div>
+
+<div>
+      <img src="https://ayyyyy.sbs/2025/09/8f21efd710b5bf5ae23e29a300eed042.png" width="200" style="border:1px solid #ccc;"/>
+      <img src="https://ayyyyy.sbs/2025/09/d0f23138e20bec822d361287c5a9b19a.png" width="200" style="border:1px solid #ccc;"/>
+      <img src="https://ayyyyy.sbs/2025/09/6d8e6bff369c79948affcdf598e9e6ca.png" width="200" style="border:1px solid #ccc;"/>
+      <img src="https://ayyyyy.sbs/2025/09/5dbfe5df6dcf8a3165db87cb670e1443.png" width="200" style="border:1px solid #ccc;"/>
+</div>
+
 
 
 
@@ -38,4 +54,3 @@
 - `thickness`: 边缘厚度 (默认: 80)
 - `edge`: 应用边缘 ('top', 'bottom', 'left', 'right', 'all')
 - `source_image_path`: 源图像文件路径 (默认: "base.png")
-
