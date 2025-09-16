@@ -750,7 +750,7 @@ fi</string>
       <string>/Volumes/GEIL2T/Softwares/anaconda3/bin/python:/Users/ay/SoftwareData/anaconda/anaconda3/envs/torch/bin/python:/Users/ay/SoftwareData/anaconda/anaconda3/bin/python:/opt/homebrew/anaconda3/bin/python</string>
     </dict>
     <key>version</key>
-    <string>1.05</string>
+    <string>1.06</string>
     <key>webaddress</key>
     <string>https://github.com/zzkkyys/Alfred-Image-Beautifier</string>
   </dict>
