@@ -21,17 +21,8 @@
 
 ## 使用方法
 
-### Alfred工作流
-1. 复制图像到剪贴板
-2. 使用Alfred快捷键调用：
-   - `Beautify screenshot` - 美化截图
-   - `torn screenshot` - 添加撕裂边缘
 
-### 直接运行
-```bash
-python beautify_screenshot.py
-python torn_edge.py
-```
+
 
 ## 配置选项
 
@@ -48,15 +39,3 @@ python torn_edge.py
 - `edge`: 应用边缘 ('top', 'bottom', 'left', 'right', 'all')
 - `source_image_path`: 源图像文件路径 (默认: "base.png")
 
-## 依赖项
-
-- Python 3.7+
-- Pillow (PIL)
-- numpy
-- Cocoa (macOS)
-
-## 文件说明
-
-- `base.png` - 撕裂边缘效果的源图像文件
-- `info.plist` - Alfred工作流配置文件
-- `__pycache__/` - Python字节码缓存目录
