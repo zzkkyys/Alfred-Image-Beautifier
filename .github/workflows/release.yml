@@ -18,46 +18,31 @@ jobs:
         with:
           python-version: '3.11'
 
+
       - name: Install dependencies
         run: |
           which zip || brew install zip
           pip install xmltodict
 
-      - name: Get info.plist version
-        id: plist_version
+      - name: Build and package release
+        id: build_release
         run: |
-          VERSION=$(python3 -c "import plistlib;with open('info.plist', 'rb') as f: plist_data = plistlib.load(f); print(plist_data['version'])")
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          python3 build_release.py
 
-      - name: Get latest git tag
-        id: latest_tag
+      - name: Get workflow file name
+        id: get_workflow
         run: |
-          TAG=$(git tag --list --sort=-v:refname | head -n 1)
-          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          FILE=$(ls Alfred-Image-Beautifier-*.alfredworkflow 2>/dev/null | head -n 1 || true)
+          echo "file=$FILE" >> $GITHUB_OUTPUT
 
-      - name: Compare version and tag
-        id: check
-        run: |
-          v1=$(echo "${{ steps.plist_version.outputs.version }}" | tr -d 'v')
-          v2=$(echo "${{ steps.latest_tag.outputs.tag }}" | tr -d 'v')
-          if [[ "$v1" == "$v2" || "$v1" < "$v2" ]]; then
-            echo "skip=true" >> $GITHUB_OUTPUT
-          else
-            echo "skip=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Inject README into info.plist
-        if: steps.check.outputs.skip == 'false'
-        run: |
-          python3 -c "import xmltodict,json;d=xmltodict.parse(open('info.plist').read());d['plist']['dict']['readme']=open('README.md').read();open('info.plist','w').write(xmltodict.unparse(d,pretty=True))"
-
-      - name: Generate Alfred Workflow file
-        if: steps.check.outputs.skip == 'false'
-        run: |
-          VERSION=${{ steps.plist_version.outputs.version }}
-          WORKFLOW_NAME="Alfred-Image-Beautifier-${VERSION}.alfredworkflow"
-          zip -r "$WORKFLOW_NAME" . -x '*.git*' '__pycache__/*' '*.pyc' '*.DS_Store'
-          echo "Generated $WORKFLOW_NAME"
+      - name: Create GitHub Release and Upload Asset
+        if: steps.get_workflow.outputs.file != ''
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.sha }}
+          files: ${{ steps.get_workflow.outputs.file }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create GitHub Release and Upload Asset
         if: steps.check.outputs.skip == 'false'
