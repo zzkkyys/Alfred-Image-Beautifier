@@ -14,7 +14,8 @@ def get_plist_version():
     with open('info.plist', 'rb') as f:
         plist_data = plistlib.load(f)
 
-    return plist_data.get('version')
+    version = plist_data.get('version')
+    return version
 # 2. 获取最新 git tag
 def get_latest_tag():
     try:
@@ -62,6 +63,9 @@ def make_zip(version):
 
 if __name__ == '__main__':
     version = get_plist_version()
+    with open(os.environ['GITHUB_ENV'], 'a') as f:
+        f.write(f"RELEASE_VERSION={version}\n")
+    
     tag = get_latest_tag()
     print(f'info.plist version: {version}, latest tag: {tag}')
     if not should_release(version, tag):
