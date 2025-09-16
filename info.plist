@@ -3,9 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.ay.imageBeautifier</string>
+	<string>com.ay.imageProcessor</string>
 	<key>connections</key>
 	<dict>
+		<key>057B456E-2052-4A2A-B546-8BDE958BED23</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>314F7A31-D6EB-41A3-97EE-4B86516718CD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>05FFB6E2-C3D8-403F-A328-935BF9E94278</key>
+		<array/>
 		<key>06A1BF84-7D11-4901-85C1-D731B8C631E3</key>
 		<array>
 			<dict>
@@ -19,11 +34,50 @@
 				<false/>
 			</dict>
 		</array>
-		<key>36BE40F3-CB2C-4ABD-A1CF-DE3A67DF7C7F</key>
+		<key>18FFFE00-675F-4143-904B-6A34BBEBD80D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9DC6744-BC14-4831-ACC7-68BE471AFD3E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>314F7A31-D6EB-41A3-97EE-4B86516718CD</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>05FFB6E2-C3D8-403F-A328-935BF9E94278</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>36BE40F3-CB2C-4ABD-A1CF-DE3A67DF7C7F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF6FE28F-B4CA-4B1B-A65D-DF03C45913C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3CB8154C-3B92-40D3-9D42-5D6B83477F55</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E4774F90-84EB-4E66-8C57-545E502D6592</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -49,7 +103,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>91F828CE-9EED-4001-B865-98CADFBEBDB0</string>
+				<string>18FFFE00-675F-4143-904B-6A34BBEBD80D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BF6FE28F-B4CA-4B1B-A65D-DF03C45913C8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>05FFB6E2-C3D8-403F-A328-935BF9E94278</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -62,7 +129,72 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>BF6FE28F-B4CA-4B1B-A65D-DF03C45913C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D9DC6744-BC14-4831-ACC7-68BE471AFD3E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
 				<string>05FFB6E2-C3D8-403F-A328-935BF9E94278</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E4774F90-84EB-4E66-8C57-545E502D6592</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9DC6744-BC14-4831-ACC7-68BE471AFD3E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FF18904C-836A-4363-9FC0-0E10FA3EFC69</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>314F7A31-D6EB-41A3-97EE-4B86516718CD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>WHITEBG-KEYWORD-001</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>057B456E-2052-4A2A-B546-8BDE958BED23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>WHITEBG-TRIGGER-001</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FF18904C-836A-4363-9FC0-0E10FA3EFC69</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -90,7 +222,7 @@
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>图片背景美化（添加圆角和背景色）</string>
+				<string>图片处理：添加圆角和背景色</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
@@ -124,6 +256,129 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>action</key>
+					<string>beautify</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>BF6FE28F-B4CA-4B1B-A65D-DF03C45913C8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>图片处理：添加圆角和背景色</string>
+				<key>subtext</key>
+				<string>Add rounded corners and background color</string>
+				<key>text</key>
+				<string>图片处理：添加圆角和背景色</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>06A1BF84-7D11-4901-85C1-D731B8C631E3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>source</key>
+					<string>clipboard</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C22A37A0-4183-4F45-86E1-FCFF471C3173</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>图片处理：添加撕裂边缘特效</string>
+				<key>subtext</key>
+				<string>Add torn edge effect</string>
+				<key>text</key>
+				<string>图片处理：添加撕裂边缘特效</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>AAC76CD5-61D3-450C-A0D4-1A4C25939902</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>source</key>
+					<string>clipboard</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>18FFFE00-675F-4143-904B-6A34BBEBD80D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>图像处理完成！！！！</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7033D677-A3ED-421A-9A10-8AF113D22708</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -132,7 +387,7 @@
 				<string>#!/bin/bash
 
 # Get the absolute path of the Python script
-SCRIPT_PATH="beautify_screenshot.py"
+SCRIPT_PATH="main.py"
 
 # Check if PYTHON_PATHS is set
 if [ -z "$PYTHON_PATHS" ]; then
@@ -153,7 +408,7 @@ for path in "${paths[@]}"; do
         echo "Trying Python interpreter: $path" &gt;&amp;2
 
         # Execute the Python script and capture its exit code
-        "$path" "$SCRIPT_PATH" $source
+        "$path" "$SCRIPT_PATH" $action $source
         python_exit_code=$?
 
         # Check if the Python script executed successfully
@@ -190,21 +445,139 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>action</key>
+					<string>torn_edge</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D9DC6744-BC14-4831-ACC7-68BE471AFD3E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>图片处理：添加撕裂边缘特效</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>3CB8154C-3B92-40D3-9D42-5D6B83477F55</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>files</key>
+					<string>{query}</string>
+					<key>source</key>
+					<string>file</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E4774F90-84EB-4E66-8C57-545E502D6592</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>图片处理：白底替换</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>WHITEBG-TRIGGER-001</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>files</key>
+					<string>{query}</string>
+					<key>source</key>
+					<string>file</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>FF18904C-836A-4363-9FC0-0E10FA3EFC69</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>action</key>
+					<string>whitebg</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>314F7A31-D6EB-41A3-97EE-4B86516718CD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>Beautify screenshot</string>
+				<string>图片处理：白底替换</string>
 				<key>subtext</key>
-				<string>美化剪贴板上的截图</string>
+				<string>Replace the transparent areas of the image with a white background</string>
 				<key>text</key>
-				<string>Beautify screenshot using python</string>
+				<string>图片处理：白底替换</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>06A1BF84-7D11-4901-85C1-D731B8C631E3</string>
+			<string>WHITEBG-KEYWORD-001</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -224,94 +597,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>C22A37A0-4183-4F45-86E1-FCFF471C3173</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-
-# Get the absolute path of the Python script
-SCRIPT_PATH="torn_edge.py"
-
-# Check if PYTHON_PATHS is set
-if [ -z "$PYTHON_PATHS" ]; then
-    echo "Error: PYTHON_PATHS environment variable is not set." &gt;&amp;2
-    exit 1
-fi
-
-# Get the PYTHON_PATHS variable from Alfred (or elsewhere)
-IFS=':' read -r -a paths &lt;&lt;&lt; "$PYTHON_PATHS"
-
-# Flag to track if any successful execution occurred
-success=false
-
-# Check each path and find the first valid one that executes the script successfully
-for path in "${paths[@]}"; do
-    if [ -x "$path" ]; then
-        # Run the Python script with the valid path
-        echo "Trying Python interpreter: $path" &gt;&amp;2
-
-        # Execute the Python script and capture its exit code
-        "$path" "$SCRIPT_PATH"
-        python_exit_code=$?
-
-        # Check if the Python script executed successfully
-        if [ $python_exit_code -eq 0 ]; then
-            success=true
-            echo "Python script executed successfully with: $path" &gt;&amp;2
-            exit 0  # Script ran successfully, so exit
-        else
-            echo "Python script failed with exit code $python_exit_code using interpreter: $path" &gt;&amp;2
-            # Continue to the next path in the loop
-        fi
-    fi
-done
-
-# If no valid Python path is found or all executions failed, print an error and exit
-if [ "$success" = false ]; then
-    echo "Error: No valid Python path found or all Python executions failed." &gt;&amp;2
-    exit 1
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>91F828CE-9EED-4001-B865-98CADFBEBDB0</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>torn screenshot</string>
-				<key>subtext</key>
-				<string>美化剪贴板上的截图：添加撕裂边缘</string>
-				<key>text</key>
-				<string>add torn to screenshot using python</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>AAC76CD5-61D3-450C-A0D4-1A4C25939902</string>
+			<string>057B456E-2052-4A2A-B546-8BDE958BED23</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -332,14 +618,21 @@ Using this hotkey will bring up the Action panel, pre-populated with your clipbo
 3. Add Universal Actions as an Alfred Fallback Search result.</string>
 	<key>uidata</key>
 	<dict>
+		<key>057B456E-2052-4A2A-B546-8BDE958BED23</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>855</real>
+		</dict>
 		<key>05FFB6E2-C3D8-403F-A328-935BF9E94278</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<real>490</real>
+			<real>995</real>
 			<key>ypos</key>
-			<real>265</real>
+			<real>510</real>
 		</dict>
 		<key>06A1BF84-7D11-4901-85C1-D731B8C631E3</key>
 		<dict>
@@ -352,30 +645,51 @@ Using this hotkey will bring up the Action panel, pre-populated with your clipbo
 			<key>ypos</key>
 			<real>265</real>
 		</dict>
+		<key>18FFFE00-675F-4143-904B-6A34BBEBD80D</key>
+		<dict>
+			<key>xpos</key>
+			<real>310</real>
+			<key>ypos</key>
+			<real>495</real>
+		</dict>
+		<key>314F7A31-D6EB-41A3-97EE-4B86516718CD</key>
+		<dict>
+			<key>xpos</key>
+			<real>650</real>
+			<key>ypos</key>
+			<real>790</real>
+		</dict>
 		<key>36BE40F3-CB2C-4ABD-A1CF-DE3A67DF7C7F</key>
 		<dict>
 			<key>xpos</key>
-			<real>360</real>
+			<real>305</real>
 			<key>ypos</key>
-			<real>145</real>
+			<real>140</real>
+		</dict>
+		<key>3CB8154C-3B92-40D3-9D42-5D6B83477F55</key>
+		<dict>
+			<key>note</key>
+			<string>在Finder选择图像文件</string>
+			<key>xpos</key>
+			<real>140</real>
+			<key>ypos</key>
+			<real>620</real>
+		</dict>
+		<key>7033D677-A3ED-421A-9A10-8AF113D22708</key>
+		<dict>
+			<key>xpos</key>
+			<real>1190</real>
+			<key>ypos</key>
+			<real>505</real>
 		</dict>
 		<key>8551D5B5-2575-4293-A514-2D1FEB176DA7</key>
 		<dict>
 			<key>note</key>
 			<string>在Finder选择图像文件</string>
 			<key>xpos</key>
-			<real>105</real>
+			<real>140</real>
 			<key>ypos</key>
-			<real>115</real>
-		</dict>
-		<key>91F828CE-9EED-4001-B865-98CADFBEBDB0</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>12</integer>
-			<key>xpos</key>
-			<real>415</real>
-			<key>ypos</key>
-			<real>475</real>
+			<real>110</real>
 		</dict>
 		<key>AAC76CD5-61D3-450C-A0D4-1A4C25939902</key>
 		<dict>
@@ -384,16 +698,58 @@ Using this hotkey will bring up the Action panel, pre-populated with your clipbo
 			<key>note</key>
 			<string>美化剪贴板上的截图，并复制美化图像到剪贴板上</string>
 			<key>xpos</key>
-			<real>200</real>
+			<real>140</real>
 			<key>ypos</key>
-			<real>475</real>
+			<real>465</real>
+		</dict>
+		<key>BF6FE28F-B4CA-4B1B-A65D-DF03C45913C8</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>220</real>
 		</dict>
 		<key>C22A37A0-4183-4F45-86E1-FCFF471C3173</key>
 		<dict>
 			<key>xpos</key>
-			<real>355</real>
+			<real>310</real>
 			<key>ypos</key>
 			<real>295</real>
+		</dict>
+		<key>D9DC6744-BC14-4831-ACC7-68BE471AFD3E</key>
+		<dict>
+			<key>xpos</key>
+			<real>375</real>
+			<key>ypos</key>
+			<real>585</real>
+		</dict>
+		<key>E4774F90-84EB-4E66-8C57-545E502D6592</key>
+		<dict>
+			<key>xpos</key>
+			<real>305</real>
+			<key>ypos</key>
+			<real>655</real>
+		</dict>
+		<key>FF18904C-836A-4363-9FC0-0E10FA3EFC69</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>730</real>
+		</dict>
+		<key>WHITEBG-KEYWORD-001</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>825</real>
+		</dict>
+		<key>WHITEBG-TRIGGER-001</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>700</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

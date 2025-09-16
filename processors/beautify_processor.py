@@ -7,8 +7,8 @@ import sys
 
 from PIL import Image
 
-from config import config
-from image_processor import ImageProcessor, ImageUtils
+from base.config import config
+from base.image_processor import ImageProcessor, ImageUtils
 
 
 class BeautifyProcessor(ImageProcessor):
@@ -59,7 +59,14 @@ class BeautifyProcessor(ImageProcessor):
 
         return gradient_background
 
-
+    def rename_file(self, input_path: str) -> str:
+        import os
+        base, ext = os.path.splitext(input_path)
+        if input_path.lower().endswith(".gif"):
+            return base + "_beautified.gif"
+        else:
+            return base + "_beautified.png"
+    
 def main(source: str = "clipboard"):
     """主函数"""
     processor = BeautifyProcessor()

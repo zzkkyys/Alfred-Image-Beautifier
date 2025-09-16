@@ -3,9 +3,17 @@ import subprocess
 import platform
 
 
+
 def show_macos_notification(title, message):
-    script = f'display notification "{message}" with title "{title}"'
-    subprocess.call(['osascript', '-e', script])
+    import shlex
+    # 转义引号，防止AppleScript语法错误
+    safe_title = title.replace('"', '\\"')
+    safe_message = message.replace('"', '\\"')
+    script = f'display notification "{safe_message}" with title "{safe_title}"'
+    try:
+        subprocess.call(['osascript', '-e', script])
+    except Exception as e:
+        print(f"通知失败: {e}")
 
 
 

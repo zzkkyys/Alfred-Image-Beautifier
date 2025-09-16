@@ -7,9 +7,9 @@ import os
 
 from PIL import Image
 
-from config import config
-from image_processor import ImageProcessor
-from utils import show_macos_notification
+from base.config import config
+from base.image_processor import ImageProcessor
+from base.utils import show_macos_notification
 
 
 class TornEdgeProcessor(ImageProcessor):
@@ -46,8 +46,8 @@ class TornEdgeProcessor(ImageProcessor):
             target_width, target_height = target_img.size
             source_width, source_height = source_torn_img.size
 
-            target_alpha = target_img.split()[3].copy()
-            new_alpha = target_alpha
+            target_alpha = target_img.split()[3]
+            new_alpha = target_alpha.copy()
 
             def apply_mask_from_source(source_region, target_box):
                 """从源区域应用遮罩到目标区域"""
@@ -129,28 +129,15 @@ class TornEdgeProcessor(ImageProcessor):
 
         return result_image
 
-    def run(self) -> None:
-        """运行撕裂边缘处理流程"""
-        try:
-            # 从剪贴板获取图像
-            image = self.get_image_from_clipboard()
-
-            # 处理图像
-            processed_image = self.process_image(image)
-
-            # 复制到剪贴板
-            self.image_to_clipboard(processed_image)
-
-        except ValueError as e:
-            print(f"错误: {e}")
-            show_macos_notification(self.workflow_name, "❌剪贴板上没有图像")
-        except FileNotFoundError as e:
-            print(f"错误: {e}")
-            show_macos_notification(self.workflow_name, f"❌{e}")
-        except Exception as e:
-            print(f"发生错误: {e}")
-            show_macos_notification(self.workflow_name, f"❌发生错误: {str(e)[:50]}")
-
+    def rename_file(self, input_path: str) -> str:
+        import os
+        base, ext = os.path.splitext(input_path)
+        if input_path.lower().endswith(".gif"):
+            return base + "_torn.gif"
+        else:
+            return base + "_torn.png"
+        
+        
 
 def main():
     """主函数"""
