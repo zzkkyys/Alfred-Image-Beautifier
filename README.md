@@ -1,4 +1,9 @@
+![](icon.png)
+
 这是一个Alfred workflow，用于美化剪贴板中的截图和图像。
+
+Created by [zzkkyys](https://github.com/zzkkyys) | [Github](https://github.com/zzkkyys/Alfred-Image-Beautifier) 
+
 
 ## 功能特性
 
@@ -13,7 +18,7 @@
 
 > 建议浏览器使用黑暗模式！！！！
 
-依次为：原始图片 $\rightarrow$  1️⃣ $\rightarrow$ 1️⃣+2️⃣ $\rightarrow$3️⃣$\rightarrow$3️⃣+1️⃣
+依次为：原始图片 $\rightarrow$  1️⃣ $\rightarrow$ 1️⃣+2️⃣  $\rightarrow$ 3️⃣ $\rightarrow$ 3️⃣+1️⃣
 
 <div align="center">
   <img src="https://ayyyyy.sbs/2025/09/581f7630e493b66f93e0845fcf740874.GIF" width="120" style="border:1px solid #ccc;"/>
