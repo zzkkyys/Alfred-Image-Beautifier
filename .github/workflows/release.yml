@@ -26,7 +26,7 @@ jobs:
       - name: Get info.plist version
         id: plist_version
         run: |
-          VERSION=$(python3 -c "import xmltodict;d=xmltodict.parse(open('info.plist').read());print(d['plist']['dict']['version'])")
+          VERSION=$(python3 -c "import xmltodict\nwith open('info.plist') as f:\n    d = xmltodict.parse(f.read())\nkv = d['plist']['dict']['key']\nvv = d['plist']['dict']['string']\nfor k, v in zip(kv, vv):\n    if k == 'version':\n        print(v)\n        break")
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Get latest git tag
