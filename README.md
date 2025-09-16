@@ -5,38 +5,37 @@
 Created by [zzkkyys](https://github.com/zzkkyys) | [Github](https://github.com/zzkkyys/Alfred-Image-Beautifier) 
 
 
-## 功能特性
+## 1. 功能特性
 
-### 支持的图片处理
+### 1.1 支持的图片处理方法
 
-1. **背景美化** - 为截图添加圆角和渐变背景
-2. **撕裂边缘效果** - 为图像添加撕裂边缘特效
-3. **白色背景** - 将透明背景图像转换为白色背景
-
-
-#### 预览
-
-> 建议浏览器使用黑暗模式！！！！
-
-依次为：原始图片 $\rightarrow$  1️⃣ $\rightarrow$ 1️⃣+2️⃣  $\rightarrow$ 3️⃣ $\rightarrow$ 3️⃣+1️⃣
-
-<div align="center">
-  <img src="https://ayyyyy.sbs/2025/09/581f7630e493b66f93e0845fcf740874.GIF" width="120" style="border:1px solid #ccc;"/>
-  <img src="https://ayyyyy.sbs/2025/09/1e45b06731f829a1be58aa76e653854b.gif" width="120" style="border:1px solid #ccc;"/>
-  <img src="https://ayyyyy.sbs/2025/09/a8b42d80d98bd36a944101875cd401d1.gif" width="120" style="border:1px solid #ccc;"/>
-  <img src="https://ayyyyy.sbs/2025/09/07da54c0505f557e711e9dc622a80dc9.gif" width="120" style="border:1px solid #ccc;"/>
-  <img src="https://ayyyyy.sbs/2025/09/766b0de4d89f5f58995cb491c331c34e.gif" width="120" style="border:1px solid #ccc;"/>
-</div>
+原图：
+![](imgs/CleanShot%202025-09-16%20at%2014.56.50@2x.png)
 
 
-依次为：原始图片$\rightarrow$ 1️⃣ $\rightarrow$ 2️⃣ $\rightarrow$ 1️⃣+2️⃣
+#### 1.1.1 背景美化
+为截图添加圆角和渐变背景，让图片更美观。
 
-<div>
-      <img src="https://ayyyyy.sbs/2025/09/8f21efd710b5bf5ae23e29a300eed042.png" width="200" style="border:1px solid #ccc;"/>
-      <img src="https://ayyyyy.sbs/2025/09/d0f23138e20bec822d361287c5a9b19a.png" width="200" style="border:1px solid #ccc;"/>
-      <img src="https://ayyyyy.sbs/2025/09/6d8e6bff369c79948affcdf598e9e6ca.png" width="200" style="border:1px solid #ccc;"/>
-      <img src="https://ayyyyy.sbs/2025/09/5dbfe5df6dcf8a3165db87cb670e1443.png" width="200" style="border:1px solid #ccc;"/>
-</div>
+示例：
+
+![](imgs/CleanShot%202025-09-16%20at%2014.56.50@2x_beautified.png)
+
+
+#### 1.1.2 撕裂边缘效果
+为图片添加撕裂边缘特效，适合做笔记或突出重点。
+
+![](imgs/CleanShot%202025-09-16%20at%2014.56.50@2x_torn.png)
+
+#### 1.1.3 白色背景
+将透明背景图片转换为白色背景，便于在浅色文档中使用。
+
+
+
+#### 组合效果
+多种处理方法可叠加使用，效果更佳。
+
+![](imgs/CleanShot%202025-09-16%20at%2014.56.50@2x_torn_beautified.png)
+
 
 ### 输入方式
 
@@ -57,7 +56,7 @@ Created by [zzkkyys](https://github.com/zzkkyys) | [Github](https://github.com/z
 
 - `PYTHON_PATHS`：Python可执行文件路径，多个路径用冒号分隔（例如：`/usr/local/bin/python3:/opt/homebrew/bin/python3`）
 
-![环境变量设置](https://ayyyyy.sbs/2025/09/63b81e1dce7a0fe862d92f7644e12ed0.png)
+![环境变量设置](imgs/63b81e1dce7a0fe862d92f7644e12ed0.png)
 
 
 ### Step 2: 运行Workflow
