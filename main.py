@@ -7,18 +7,20 @@ import os, sys
 from processors.beautify_processor import BeautifyProcessor
 from processors.torn_edge_processor import TornEdgeProcessor
 from processors.whitebg_processor import WhiteBGProcessor
+from processors.pad_text_processor import PadTextProcessor
 from argparse import ArgumentParser
 
 
 if __name__ == "__main__":
     
     parser = ArgumentParser(description="美化截图处理器")
-    parser.add_argument("action", help="clipboard or file", choices=["beautify", "torn_edge", "whitebg"])
-    parser.add_argument("source", help="clipboard or file", choices=["clipboard", "file"])
+    parser.add_argument("action", help="处理类型", choices=["beautify", "torn_edge", "whitebg", "pad_text"])
+    parser.add_argument("source", help="来源", choices=["clipboard", "file"])
     args = parser.parse_args()
-        
+
     print("Action:", args.action, file=sys.stderr)
     print("Source:", args.source, file=sys.stderr)
+
 
     if args.action == "beautify":
         processor = BeautifyProcessor()
@@ -26,7 +28,8 @@ if __name__ == "__main__":
         processor = TornEdgeProcessor()
     elif args.action == "whitebg":
         processor = WhiteBGProcessor()
-
+    elif args.action == "pad_text":
+        processor = PadTextProcessor()
 
     if args.source == "file":
         file_paths = os.environ["files"]
@@ -35,4 +38,4 @@ if __name__ == "__main__":
             processor.process_image_file(file_path)
     elif args.source == "clipboard":
         processor.run()
-        
+

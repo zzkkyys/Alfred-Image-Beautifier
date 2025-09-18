@@ -63,8 +63,11 @@ def make_zip(version):
 
 if __name__ == '__main__':
     version = get_plist_version()
-    with open(os.environ['GITHUB_ENV'], 'a') as f:
-        f.write(f"RELEASE_VERSION={version}\n")
+    try:
+        with open(os.environ['GITHUB_ENV'], 'a') as f:
+            f.write(f"RELEASE_VERSION={version}\n")
+    except Exception:
+        pass
     
     tag = get_latest_tag()
     print(f'info.plist version: {version}, latest tag: {tag}')
