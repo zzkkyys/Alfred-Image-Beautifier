@@ -39,11 +39,22 @@ class TornEdgeConfig:
 
 
 @dataclass
+class PadTextConfig:
+    """文本填充配置"""
+
+    font_path: str = "/System/Library/Fonts/Hiragino Sans GB.ttc"  # 字体路径
+    font_size: int = 24  # 字体大小
+    pad_color: Tuple[int, int, int] = (255, 255, 255)  # 填充颜色
+    max_width_ratio: float = 0.9  # 最大宽度比例
+
+@dataclass
 class WorkflowConfig:
     """工作流配置"""
 
     beautify: BeautifyConfig = field(default_factory=BeautifyConfig)
     torn_edge: TornEdgeConfig = field(default_factory=TornEdgeConfig)
+    pad_text: PadTextConfig = field(default_factory=PadTextConfig)
+
 
     # 工作流名称
     beautify_workflow_name: str = "Beautify Screenshot"

@@ -6,7 +6,7 @@ import sys
 
 from PIL import Image, ImageDraw, ImageFont, ImageSequence
 
-from base.config import config
+from base.config import config, PadTextConfig
 from base.image_processor import ImageProcessor, ImageUtils
 
 def get_text_size(text, font, max_width):
@@ -48,16 +48,23 @@ def get_text_size(text, font, max_width):
 class PadTextProcessor(ImageProcessor):
     def __init__(self):
         super().__init__("Pad Text Processor")
+        self.pad_text_config: PadTextConfig = config.pad_text
 
     def process_image(self, img: Image.Image) -> Image.Image:
         text = os.environ.get("text", "默认文本：你好世界").strip()
 
         # 对于 macOS，Hiragino 是个不错的选择。对于 Windows/Linux，可能需要 'msyh.ttc' 或其他字体。
-        font_path = "/System/Library/Fonts/Hiragino Sans GB.ttc"
-        font_size = 24
-        pad_color = (255, 255, 255)
+        font_path = self.pad_text_config.font_path
+        font_size = self.pad_text_config.font_size
+        pad_color = self.pad_text_config.pad_color
+        max_width_ratio = self.pad_text_config.max_width_ratio
 
         width, height = img.size
+        
+        
+        max_width = int(width * max_width_ratio)
+        
+        
         
         # 检查字体文件是否存在
         if font_path and os.path.exists(font_path):
